@@ -1,0 +1,81 @@
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.logo {
+		height: 32px;
+	}
+
+	.nav__toggler {
+		width: 24px;
+		height: 13px;
+		background: url(../../images/icons/hamburger.svg) no-repeat center/cover;
+
+		@include respond-to(small) {
+			display: none;
+		}
+	}
+
+	.list {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		display: none;
+
+		@include respond-to(small) {
+			display: flex;
+			justify-content: space-between;
+			width: 45%;
+		}
+
+		.nav__item {
+			font-size: 1.2rem;
+
+			a {
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $primary-gray;
+				letter-spacing: 2px;
+				font-weight: 600;
+			}
+
+			&.selected a {
+				color: $primary-green;
+			}
+		}
+	}
+}
+
+// Toggled Nav
+
+.nav.expanded {
+	position: relative;
+
+	.nav__toggler {
+		background: url(../../images/icons/close.svg) no-repeat center/cover;
+	}
+
+	.list {
+		background: $primary-gray;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 56px;
+		width: 72.5%;
+		text-align: center;
+		padding: 4rem 0;
+
+		.nav__item {
+			margin-bottom: 3.2rem;
+
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			a {
+				color: #fff;
+			}
+		}
+	}
+}

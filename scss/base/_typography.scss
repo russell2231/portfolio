@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans:wght@400;600&display=swap');
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	color: $primary-gray;
+}
+
+h1 {
+	font-family: $heading-font;
+	font-size: 5rem;
+	font-weight: bold;
+	line-height: 1;
+	letter-spacing: -0.45px;
+}
+
+h2 {
+	font-family: $heading-font;
+	font-size: 4rem;
+	font-weight: bold;
+	line-height: 1.05;
+	letter-spacing: -0.36px;
+}
+
+h3 {
+	font-family: $heading-font;
+	font-size: 3.2rem;
+	font-weight: normal;
+	line-height: 1.125;
+	letter-spacing: -0.29px;
+}
+
+p {
+	line-height: 1.875;
+}
+
+a {
+	font-family: $body-font;
+}
+
+button {
+	font-family: $body-font;
+}

@@ -1,0 +1,11 @@
+.container {
+	width: 83%;
+	margin: 0 auto;
+
+	@include respond-to(small) {
+		width: 90%;
+	}
+	@include respond-to(large) {
+		width: 77%;
+	}
+}
