@@ -7,14 +7,20 @@ html {
 body {
 	font-size: 1.6rem;
 	color: $primary-gray;
+	font-family: $body-font;
 }
 
 h1 {
 	font-family: $heading-font;
-	font-size: 5rem;
+	font-size: 4rem;
 	font-weight: bold;
 	line-height: 1;
-	letter-spacing: -0.45px;
+	letter-spacing: -0.36px;
+
+	@include respond-to(medium) {
+		font-size: 5rem;
+		letter-spacing: -0.45px;
+	}
 }
 
 h2 {

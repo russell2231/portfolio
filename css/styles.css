@@ -1,18 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans:wght@400;600&display=swap");
 .container {
   width: 83%;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     width: 90%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 77%;
   }
 }
 
@@ -366,14 +361,22 @@ html {
 body {
   font-size: 1.6rem;
   color: #33323d;
+  font-family: "Public Sans", sans-serif;
 }
 
 h1 {
   font-family: "Ibarra Real Nova", serif;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   line-height: 1;
-  letter-spacing: -0.45px;
+  letter-spacing: -0.36px;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 5rem;
+    letter-spacing: -0.45px;
+  }
 }
 
 h2 {
@@ -504,5 +507,80 @@ header {
 
 .nav.expanded .list .nav__item a {
   color: #fff;
+}
+
+.hero {
+  padding-bottom: 9.6rem;
+}
+
+.hero .hero__content {
+  background: url(../../images/homepage/mobile/hompage-hero.jpg) no-repeat;
+  background-size: cover;
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero .hero__content {
+    background: url(../../images/homepage/mobile/hompage-hero@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero__content {
+    background: url(../../images/homepage/tablet/hompage-hero.jpg) no-repeat;
+    background-size: cover;
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero__content {
+    background: url(../../images/homepage/tablet/hompage-hero@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero .hero__content {
+    background: url(../../images/homepage/desktop/hompage-hero.jpg) no-repeat center/cover;
+    height: 65vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1024px) and (min-resolution: 192dpi), only screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .hero .hero__content {
+    background: url(../../images/homepage/desktop/hompage-hero@2x.jpg) no-repeat center/cover;
+  }
+}
+
+.hero .hero__title {
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .hero .hero__title {
+    margin-top: 0;
+  }
+}
+
+.hero .hero__tagline {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Ibarra Real Nova", serif;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,56 @@
+.hero {
+	padding-bottom: 9.6rem;
+
+	.hero__content {
+		background: url(../../images/homepage/mobile/hompage-hero.jpg) no-repeat;
+		background-size: cover;
+		height: 30vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		@include retina {
+			background: url(../../images/homepage/mobile/hompage-hero@2x.jpg)
+				no-repeat;
+			background-size: cover;
+		}
+
+		@include respond-to(small) {
+			background: url(../../images/homepage/tablet/hompage-hero.jpg) no-repeat;
+			background-size: cover;
+			height: 50vh;
+
+			@include retina {
+				background: url(../../images/homepage/tablet/hompage-hero@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+		@include respond-to(medium) {
+			background: url(../../images/homepage/desktop/hompage-hero.jpg) no-repeat
+				center/cover;
+			height: 65vh;
+
+			@include retina {
+				background: url(../../images/homepage/desktop/hompage-hero@2x.jpg)
+					no-repeat center/cover;
+			}
+		}
+	}
+
+	.hero__title {
+		margin-top: 4rem;
+		margin-bottom: 0;
+
+		@include respond-to(small) {
+			margin-top: 0;
+		}
+	}
+
+	.hero__tagline {
+		margin-top: 0;
+		margin-bottom: 0;
+		font-family: $heading-font;
+	}
+}
