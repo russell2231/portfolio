@@ -712,6 +712,104 @@ header {
   }
 }
 
+footer {
+  background: #33323d;
+  padding: 5.6rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 2.4rem 0;
+  }
+}
+
+footer .footer__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer__content .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 418px;
+  }
+}
+
+footer .footer__content .logo g {
+  fill: #fff;
+}
+
+footer .footer__content .list {
+  padding: 0;
+  margin: 4rem 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer__content .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0;
+    width: 309px;
+  }
+}
+
+footer .footer__content .list .nav__item {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer__content .list .nav__item {
+    margin-bottom: 0;
+  }
+}
+
+footer .footer__content .list .nav__item:last-of-type {
+  margin-bottom: 0;
+}
+
+footer .footer__content .list .nav__item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .footer__content .social {
+  margin: 0 1rem;
+}
+
+footer .footer__content .social path {
+  fill: #fff;
+}
+
 .btn {
   padding: 1.6rem 3.2rem;
   font-size: 1.2rem;
