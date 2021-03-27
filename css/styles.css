@@ -590,6 +590,12 @@ header {
   padding-bottom: 10rem;
 }
 
+@media screen and (min-width: 1024px) {
+  .about {
+    padding-bottom: 15rem;
+  }
+}
+
 .about .about__image {
   display: none;
 }
@@ -634,6 +640,76 @@ header {
 .about .about__tagline {
   margin-top: 0;
   margin-bottom: 2.8rem;
+}
+
+.shoutout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-bottom: 8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .shoutout {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    padding-bottom: 10rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .shoutout {
+    padding-bottom: 15rem;
+  }
+}
+
+.shoutout .shoutout__title {
+  margin-top: 0;
+  margin-bottom: 4.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .shoutout .shoutout__title {
+    margin-bottom: 0;
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shoutout .shoutout__line {
+    width: 17%;
+    height: 1px;
+    background: rgba(51, 50, 61, 0.15);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .shoutout .shoutout__line {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .shoutout .shoutout__line {
+    width: 48%;
+  }
 }
 
 .btn {

@@ -1,0 +1,42 @@
+.shoutout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 8rem;
+
+	@include respond-to(small) {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		text-align: left;
+		padding-bottom: 10rem;
+	}
+	@include respond-to(medium) {
+		padding-bottom: 15rem;
+	}
+
+	.shoutout__title {
+		margin-top: 0;
+		margin-bottom: 4.2rem;
+
+		@include respond-to(small) {
+			margin-bottom: 0;
+			width: 350px;
+		}
+	}
+
+	.shoutout__line {
+		@include respond-to(small) {
+			width: 17%;
+			height: 1px;
+			background: rgba($primary-gray, 0.15);
+		}
+		@include respond-to(medium) {
+			width: 35%;
+		}
+		@include respond-to(large) {
+			width: 48%;
+		}
+	}
+}
