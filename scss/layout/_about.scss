@@ -1,0 +1,41 @@
+.about {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 10rem;
+
+	.about__image {
+		display: none;
+
+		@include respond-to(small) {
+			display: initial;
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.about__content {
+		padding: 3rem 0 5rem;
+		border-top: 1px solid rgba($primary-gray, 0.15);
+		border-bottom: 1px solid rgba($primary-gray, 0.15);
+
+		@include respond-to(small) {
+			width: 50%;
+		}
+		@include respond-to(medium) {
+			width: 35%;
+		}
+		@include respond-to(large) {
+			margin-right: 5rem;
+		}
+	}
+
+	.about__title {
+		margin-top: 0;
+		margin-bottom: 2.8rem;
+	}
+
+	.about__tagline {
+		margin-top: 0;
+		margin-bottom: 2.8rem;
+	}
+}

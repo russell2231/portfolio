@@ -514,8 +514,7 @@ header {
 }
 
 .hero .hero__content {
-  background: url(../../images/homepage/mobile/hompage-hero.jpg) no-repeat;
-  background-size: cover;
+  background: url(../../images/homepage/mobile/homepage-hero.jpg) no-repeat top left/cover;
   height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -534,36 +533,33 @@ header {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .hero .hero__content {
-    background: url(../../images/homepage/mobile/hompage-hero@2x.jpg) no-repeat;
-    background-size: cover;
+    background: url(../../images/homepage/mobile/homepage-hero@2x.jpg) no-repeat top left/cover;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero .hero__content {
-    background: url(../../images/homepage/tablet/hompage-hero.jpg) no-repeat;
-    background-size: cover;
+    background: url(../../images/homepage/tablet/homepage-hero.jpg) no-repeat top left/cover;
     height: 50vh;
   }
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero .hero__content {
-    background: url(../../images/homepage/tablet/hompage-hero@2x.jpg) no-repeat;
-    background-size: cover;
+    background: url(../../images/homepage/tablet/homepage-hero@2x.jpg) no-repeat top left/cover;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero .hero__content {
-    background: url(../../images/homepage/desktop/hompage-hero.jpg) no-repeat center/cover;
+    background: url(../../images/homepage/desktop/homepage-hero.jpg) no-repeat center/cover;
     height: 65vh;
   }
 }
 
 @media only screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1024px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1024px) and (min-resolution: 192dpi), only screen and (min-width: 1024px) and (min-resolution: 2dppx) {
   .hero .hero__content {
-    background: url(../../images/homepage/desktop/hompage-hero@2x.jpg) no-repeat center/cover;
+    background: url(../../images/homepage/desktop/homepage-hero@2x.jpg) no-repeat center/cover;
   }
 }
 
@@ -582,5 +578,75 @@ header {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Ibarra Real Nova", serif;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10rem;
+}
+
+.about .about__image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about .about__image {
+    display: initial;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.about .about__content {
+  padding: 3rem 0 5rem;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+@media screen and (min-width: 768px) {
+  .about .about__content {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about .about__content {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about .about__content {
+    margin-right: 5rem;
+  }
+}
+
+.about .about__title {
+  margin-top: 0;
+  margin-bottom: 2.8rem;
+}
+
+.about .about__tagline {
+  margin-top: 0;
+  margin-bottom: 2.8rem;
+}
+
+.btn {
+  padding: 1.6rem 3.2rem;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.btn--primary {
+  border: 1px solid #33323d;
+  color: #33323d;
+  background: transparent;
 }
 /*# sourceMappingURL=styles.css.map */

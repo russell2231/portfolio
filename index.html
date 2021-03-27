@@ -27,6 +27,42 @@
 					<p class="hero__tagline">Front-End Developer</p>
 				</div>
 			</section>
+
+			<section class="container about">
+				<picture>
+					<source
+						media="(min-width: 1024px)"
+						srcset="
+							images/homepage/desktop/homepage-profile.jpg    1x,
+							images/homepage/desktop/homepage-profile@2x.jpg 2x
+						"
+					/>
+					<source
+						media="(min-width: 768px)"
+						srcset="
+							images/homepage/tablet/homepage-profile.jpg    1x,
+							images/homepage/tablet/homepage-profile@2x.jpg 2x
+						"
+					/>
+					<img
+						class="about__image"
+						src="images/homepage/tablet/homepage-profile.jpg"
+						alt=""
+					/>
+				</picture>
+
+				<div class="about__content">
+					<h2 class="about__title">About Me</h2>
+					<p class="about__tagline">
+						I'm a self-taught front-end developer looking for a new role with a
+						company. I focus on writing accessible HTML, using modern CSS
+						practices and writing clean Javascript. When writing Javascript
+						code, I mostly write vanilla, but I can adapt to whatever tools are
+						required. I'd love you to check out my work.
+					</p>
+					<a href="portolio.html" class="btn btn--primary">Go to portfolio</a>
+				</div>
+			</section>
 		</main>
 	</body>
 </html>

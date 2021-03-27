@@ -3,6 +3,8 @@
 
 @import 'base/normalize', 'base/typography', 'base/base';
 
-@import 'layout/header', 'layout/navbar', 'layout/hero';
+@import 'layout/header', 'layout/navbar', 'layout/hero', 'layout/about';
+
+@import 'components/buttons';
 
 @import 'pages/index';

@@ -1,0 +1,13 @@
+.btn {
+	padding: 1.6rem 3.2rem;
+	font-size: 1.2rem;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn--primary {
+	border: 1px solid $primary-gray;
+	color: $primary-gray;
+	background: transparent;
+}

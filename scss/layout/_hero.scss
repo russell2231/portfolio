@@ -2,8 +2,8 @@
 	padding-bottom: 9.6rem;
 
 	.hero__content {
-		background: url(../../images/homepage/mobile/hompage-hero.jpg) no-repeat;
-		background-size: cover;
+		background: url(../../images/homepage/mobile/homepage-hero.jpg) no-repeat
+			top left/cover;
 		height: 30vh;
 		display: flex;
 		flex-direction: column;
@@ -11,29 +11,28 @@
 		justify-content: center;
 
 		@include retina {
-			background: url(../../images/homepage/mobile/hompage-hero@2x.jpg)
-				no-repeat;
-			background-size: cover;
+			background: url(../../images/homepage/mobile/homepage-hero@2x.jpg)
+				no-repeat top left/cover;
 		}
 
 		@include respond-to(small) {
-			background: url(../../images/homepage/tablet/hompage-hero.jpg) no-repeat;
-			background-size: cover;
+			background: url(../../images/homepage/tablet/homepage-hero.jpg) no-repeat
+				top left/cover;
+
 			height: 50vh;
 
 			@include retina {
-				background: url(../../images/homepage/tablet/hompage-hero@2x.jpg)
-					no-repeat;
-				background-size: cover;
+				background: url(../../images/homepage/tablet/homepage-hero@2x.jpg)
+					no-repeat top left/cover;
 			}
 		}
 		@include respond-to(medium) {
-			background: url(../../images/homepage/desktop/hompage-hero.jpg) no-repeat
+			background: url(../../images/homepage/desktop/homepage-hero.jpg) no-repeat
 				center/cover;
 			height: 65vh;
 
 			@include retina {
-				background: url(../../images/homepage/desktop/hompage-hero@2x.jpg)
+				background: url(../../images/homepage/desktop/homepage-hero@2x.jpg)
 					no-repeat center/cover;
 			}
 		}
