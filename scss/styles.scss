@@ -4,8 +4,8 @@
 @import 'base/normalize', 'base/typography', 'base/base';
 
 @import 'layout/header', 'layout/navbar', 'layout/hero', 'layout/about',
-	'layout/shoutout', 'layout/footer';
+	'layout/shoutout', 'layout/footer', 'layout/project';
 
 @import 'components/buttons';
 
-@import 'pages/index';
+@import 'pages/portfolio';

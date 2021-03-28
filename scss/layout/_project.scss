@@ -1,0 +1,69 @@
+.project {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 7.2rem;
+
+	@include respond-to(small) {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 8rem;
+
+		&:nth-of-type(even) {
+			flex-direction: row-reverse;
+		}
+	}
+	@include respond-to(large) {
+		align-items: stretch;
+
+		&:nth-of-type(odd) {
+			padding-right: 10rem;
+		}
+		&:nth-of-type(even) {
+			padding-left: 10rem;
+		}
+	}
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.project__content {
+		margin-top: 3.2rem;
+		padding: 2.4rem 0;
+		border-top: 1px solid rgba($primary-gray, 0.15);
+		border-bottom: 1px solid rgba($primary-gray, 0.15);
+
+		@include respond-to(small) {
+			margin-top: 0;
+			padding: 3rem 0 5rem;
+			width: 41%;
+		}
+		@include respond-to(large) {
+			padding: 10rem 0;
+			width: 31.5%;
+		}
+
+		.project__title {
+			margin-top: 0;
+			margin-bottom: 2.4rem;
+
+			@include respond-to(small) {
+				margin-bottom: 3rem;
+			}
+		}
+
+		.project__tagline {
+			margin-top: 0;
+			margin-bottom: 2.4rem;
+
+			@include respond-to(small) {
+				margin-bottom: 3.6rem;
+			}
+		}
+
+		.btn {
+			display: inline-block;
+		}
+	}
+}

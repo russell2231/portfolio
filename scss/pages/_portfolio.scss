@@ -1,0 +1,11 @@
+.portfolio {
+	padding-bottom: 8rem;
+
+	@include respond-to(small) {
+		padding-top: 5rem;
+		padding-bottom: 9rem;
+	}
+	@include respond-to(large) {
+		padding-bottom: 15rem;
+	}
+}
