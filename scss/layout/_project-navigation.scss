@@ -1,0 +1,68 @@
+.project-navigation {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid rgba($primary-gray, 0.15);
+	border-bottom: 1px solid rgba($primary-gray, 0.15);
+	padding: 2.4rem 0;
+	margin-bottom: 6rem;
+	position: relative;
+
+	@include respond-to(small) {
+		padding: 3.3rem 0;
+		margin-bottom: 7.8rem;
+	}
+	@include respond-to(large) {
+		margin-bottom: 10rem;
+	}
+
+	&::after {
+		content: '';
+		background: rgba($primary-gray, 0.15);
+		width: 1px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	.go-to {
+		@include respond-to(small) {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 200px;
+		}
+
+		.link {
+			text-decoration: none;
+			color: $primary-gray;
+
+			@include respond-to(small) {
+				width: 80%;
+			}
+
+			.project__title {
+				margin-top: 1.6rem;
+				margin-bottom: 0;
+
+				@include respond-to(small) {
+					margin-top: 0;
+				}
+			}
+
+			p {
+				margin: 0;
+				opacity: 0.5;
+			}
+		}
+	}
+
+	.next {
+		text-align: right;
+
+		@include respond-to(small) {
+			flex-direction: row-reverse;
+		}
+	}
+}
