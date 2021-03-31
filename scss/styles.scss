@@ -5,8 +5,8 @@
 
 @import 'layout/header', 'layout/navbar', 'layout/hero', 'layout/about',
 	'layout/shoutout', 'layout/footer', 'layout/project-showcase',
-	'layout/project', 'layout/project-navigation';
+	'layout/project', 'layout/project-navigation', 'layout/forms';
 
 @import 'components/buttons';
 
-@import 'pages/portfolio';
+@import 'pages/portfolio', 'pages/contact';

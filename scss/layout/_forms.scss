@@ -1,0 +1,28 @@
+.contact__form {
+	label {
+		display: block;
+		font-size: 1.3rem;
+		opacity: 0.8;
+		margin-bottom: 1rem;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+		padding: 1.7rem 1.6rem;
+		border: none;
+		background: rgba($primary-gray, 0.1);
+		font-size: 1.3rem;
+		color: $primary-gray;
+		margin-bottom: 2.4rem;
+
+		&::placeholder {
+			opacity: 0.4;
+			color: $primary-gray;
+		}
+	}
+
+	textarea {
+		height: 9.6rem;
+	}
+}
