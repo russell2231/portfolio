@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans:ital,wght@0,400;0,600;1,700&display=swap");
 .container {
   width: 83%;
   max-width: 1110px;
@@ -1146,6 +1146,10 @@ footer .footer__content .social path {
   }
 }
 
+.contact__form .form-group {
+  margin-bottom: 2.4rem;
+}
+
 .contact__form label {
   display: block;
   font-size: 1.3rem;
@@ -1161,7 +1165,6 @@ footer .footer__content .social path {
   background: rgba(51, 50, 61, 0.1);
   font-size: 1.3rem;
   color: #33323d;
-  margin-bottom: 2.4rem;
 }
 
 .contact__form input::-webkit-input-placeholder,
@@ -1188,8 +1191,48 @@ footer .footer__content .social path {
   color: #33323d;
 }
 
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline-color: #203a4c;
+}
+
+.contact__form input.error,
+.contact__form textarea.error {
+  border: 1px solid #f43030;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.contact__form input.error:focus,
+.contact__form textarea.error:focus {
+  outline: none;
+}
+
+.contact__form input.error + .error-message,
+.contact__form textarea.error + .error-message {
+  display: block;
+}
+
+.contact__form input.success,
+.contact__form textarea.success {
+  border: 1px solid #5fb4a2;
+}
+
+.contact__form input.success:focus,
+.contact__form textarea.success:focus {
+  outline: none;
+}
+
 .contact__form textarea {
   height: 9.6rem;
+}
+
+.contact__form .error-message {
+  display: none;
+  font-size: 1rem;
+  color: #f43030;
+  font-weight: 700;
+  font-style: italic;
 }
 
 .btn {

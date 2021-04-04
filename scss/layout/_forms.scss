@@ -1,4 +1,8 @@
 .contact__form {
+	.form-group {
+		margin-bottom: 2.4rem;
+	}
+
 	label {
 		display: block;
 		font-size: 1.3rem;
@@ -14,15 +18,48 @@
 		background: rgba($primary-gray, 0.1);
 		font-size: 1.3rem;
 		color: $primary-gray;
-		margin-bottom: 2.4rem;
 
 		&::placeholder {
 			opacity: 0.4;
 			color: $primary-gray;
 		}
+
+		&:focus {
+			outline-color: $primary-blue;
+		}
+
+		&.error {
+			border: 1px solid #f43030;
+			position: relative;
+			margin-bottom: 0.5rem;
+
+			&:focus {
+				outline: none;
+			}
+
+			& + .error-message {
+				display: block;
+			}
+		}
+
+		&.success {
+			border: 1px solid $primary-green;
+
+			&:focus {
+				outline: none;
+			}
+		}
 	}
 
 	textarea {
 		height: 9.6rem;
+	}
+
+	.error-message {
+		display: none;
+		font-size: 1rem;
+		color: #f43030;
+		font-weight: 700;
+		font-style: italic;
 	}
 }
