@@ -58,14 +58,27 @@ footer {
 				a {
 					color: #fff;
 					text-decoration: none;
+					transition: color 0.3s ease-in;
+
+					&:hover {
+						color: $primary-green;
+					}
 				}
 			}
 		}
 
 		.social {
 			margin: 0 1rem;
+			transition: fill 1s ease-in;
+
 			path {
 				fill: #fff;
+			}
+
+			&:hover {
+				path {
+					fill: $primary-green;
+				}
 			}
 		}
 	}

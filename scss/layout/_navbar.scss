@@ -38,6 +38,11 @@
 				color: $primary-gray;
 				letter-spacing: 2px;
 				font-weight: 600;
+				transition: color 0.3s ease-in;
+
+				&:hover {
+					color: $primary-green;
+				}
 			}
 
 			&.selected a {

@@ -51,6 +51,10 @@
 		width: 60px;
 		display: flex;
 		justify-content: space-between;
+
+		.social:hover path {
+			fill: $primary-green;
+		}
 	}
 
 	.contact__form-container {

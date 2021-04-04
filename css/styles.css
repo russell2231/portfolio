@@ -479,6 +479,12 @@ header {
   color: #33323d;
   letter-spacing: 2px;
   font-weight: 600;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+.nav .list .nav__item a:hover {
+  color: #5fb4a2;
 }
 
 .nav .list .nav__item.selected a {
@@ -807,14 +813,26 @@ footer .footer__content .list .nav__item:last-of-type {
 footer .footer__content .list .nav__item a {
   color: #fff;
   text-decoration: none;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+footer .footer__content .list .nav__item a:hover {
+  color: #5fb4a2;
 }
 
 footer .footer__content .social {
   margin: 0 1rem;
+  -webkit-transition: fill 1s ease-in;
+  transition: fill 1s ease-in;
 }
 
 footer .footer__content .social path {
   fill: #fff;
+}
+
+footer .footer__content .social:hover path {
+  fill: #5fb4a2;
 }
 
 .project-showcase {
@@ -1109,6 +1127,12 @@ footer .footer__content .social path {
 .project-navigation .go-to .link {
   text-decoration: none;
   color: #33323d;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+.project-navigation .go-to .link:hover {
+  color: #5fb4a2;
 }
 
 @media screen and (min-width: 768px) {
@@ -1235,6 +1259,10 @@ footer .footer__content .social path {
   font-style: italic;
 }
 
+button {
+  cursor: pointer;
+}
+
 .btn {
   padding: 1.6rem 3.2rem;
   font-size: 1.2rem;
@@ -1247,12 +1275,26 @@ footer .footer__content .social path {
   border: 1px solid #33323d;
   color: #33323d;
   background: transparent;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+}
+
+.btn--primary:hover {
+  background: #33323d;
+  color: #fff;
 }
 
 .btn--primary-blue {
   border: 1px solid #203a4c;
   color: #fff;
   background: #203a4c;
+  -webkit-transition: background 0.3s ease-in;
+  transition: background 0.3s ease-in;
+}
+
+.btn--primary-blue:hover {
+  background: #5fb4a2;
+  border-color: #5fb4a2;
 }
 
 .portfolio {
@@ -1347,6 +1389,10 @@ footer .footer__content .social path {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.contact .socials .social:hover path {
+  fill: #5fb4a2;
 }
 
 @media screen and (min-width: 1440px) {

@@ -1,3 +1,7 @@
+button {
+	cursor: pointer;
+}
+
 .btn {
 	padding: 1.6rem 3.2rem;
 	font-size: 1.2rem;
@@ -10,10 +14,22 @@
 	border: 1px solid $primary-gray;
 	color: $primary-gray;
 	background: transparent;
+	transition: background 0.3s ease-in;
+
+	&:hover {
+		background: $primary-gray;
+		color: #fff;
+	}
 }
 
 .btn--primary-blue {
 	border: 1px solid $primary-blue;
 	color: #fff;
 	background: $primary-blue;
+	transition: background 0.3s ease-in;
+
+	&:hover {
+		background: $primary-green;
+		border-color: $primary-green;
+	}
 }

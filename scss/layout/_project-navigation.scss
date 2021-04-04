@@ -37,6 +37,11 @@
 		.link {
 			text-decoration: none;
 			color: $primary-gray;
+			transition: color 0.3s ease-in;
+
+			&:hover {
+				color: $primary-green;
+			}
 
 			@include respond-to(small) {
 				width: 80%;
