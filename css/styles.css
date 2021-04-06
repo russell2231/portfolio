@@ -998,6 +998,18 @@ footer .footer__content .social:hover path {
   margin-bottom: 2.4rem;
 }
 
+@media screen and (min-width: 768px) {
+  .project .project__title {
+    max-width: 345px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project .project__title {
+    max-width: unset;
+  }
+}
+
 .project .project__tagline {
   margin-top: 0;
   margin-bottom: 2.4rem;

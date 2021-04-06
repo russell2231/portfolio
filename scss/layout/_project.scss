@@ -41,6 +41,13 @@
 	.project__title {
 		margin-top: 0;
 		margin-bottom: 2.4rem;
+
+		@include respond-to(small) {
+			max-width: 345px;
+		}
+		@include respond-to(medium) {
+			max-width: unset;
+		}
 	}
 
 	.project__tagline {
