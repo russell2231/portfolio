@@ -90,11 +90,13 @@ contactForm.addEventListener('submit', (e) => {
 	if (!isFormValid) {
 		e.preventDefault();
 	} else {
-		nameEl.value = '';
-		nameEl.classList.remove('success');
-		emailEl.value = '';
-		emailEl.classList.remove('success');
-		messageEl.value = '';
-		messageEl.classList.remove('success');
+		let formData = new FormData(contactForm);
+		fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+			body: new URLSearchParams(formData).toString(),
+		})
+			.then(() => console.log('Form successfully submitted'))
+			.catch((error) => alert(error));
 	}
 });
